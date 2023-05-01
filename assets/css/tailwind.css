@@ -1,3 +1,9 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+:root{
+	--rn-orange: rgb(223 134 57);
+	--rn-red: rgb(172 54 54);
+	--rn-blue: rgb(24 91 116);
+}
