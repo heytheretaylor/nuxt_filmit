@@ -2,7 +2,16 @@
 @tailwind components;
 @tailwind utilities;
 
+@font-face {
+	font-family: 'Poppins-Regular';
+	src: url(../fonts/Poppins/Poppins-Regular.ttf);
+}
+@font-face {
+	font-family: 'Poppins-Bold';
+	src: url(../fonts/Poppins/Poppins-Bold.ttf);
+}
 :root{
+	font-family: 'Poppins-Regular';
 	--rn-orange: rgb(223 134 57);
 	--rn-red: rgb(172 54 54);
 	--rn-blue: rgb(24 91 116);

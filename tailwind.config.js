@@ -8,6 +8,9 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
+    fontFamily:{
+      'bold': ['Poppins-Bold']
+    },
     extend: {
       colors: {
         primary: 'var(--aw-color-primary)',
@@ -17,6 +20,9 @@ module.exports = {
         'box-blue': 'var(--rn-blue)',
         'box-red': 'var(--rn-red)'
       },
+      screens:{
+        'xs': '0px'
+      }
     },
   },
   plugins: [],
