@@ -35,6 +35,7 @@
 		<section>
 			<img src="~assets/img/ladder.jpg">
 		</section>
+		<LandingFooter></LandingFooter>
 	</main>
 </template>
 <script setup>
