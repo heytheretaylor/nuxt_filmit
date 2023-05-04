@@ -4,7 +4,7 @@ const links = [
 		{to: '/services', title: 'Services'},
 		{to: '/work', title: 'Our Work'},
 		{to: '/about', title: 'About Us'},
-		{to: '/contact', title: 'Contact'}
+		{to: '#contact', title: 'Contact'}
 	]
 </script>
 <template>

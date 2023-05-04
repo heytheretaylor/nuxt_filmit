@@ -8,8 +8,14 @@ module.exports = {
     "./nuxt.config.{js,ts}",
   ],
   theme: {
+    borderRadius:{
+      'chungus': '10rem'
+    },
     fontFamily:{
       'bold': ['Poppins-Bold']
+    },
+    gridTemplateRows:{
+      'contact': '200px 200px 200px' 
     },
     extend: {
       colors: {
