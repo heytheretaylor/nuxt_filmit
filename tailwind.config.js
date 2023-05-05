@@ -15,7 +15,7 @@ module.exports = {
       'bold': ['Poppins-Bold']
     },
     gridTemplateRows:{
-      'contact': '200px 200px 200px' 
+      'contact': '1fr 1fr 1fr' 
     },
     extend: {
       colors: {

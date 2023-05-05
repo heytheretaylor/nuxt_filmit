@@ -1,19 +1,25 @@
 <template>
 	<footer>
-		<div class="w-full rounded-t-chungus bg-gray-200 py-40 px-48 grid gap-4 grid-cols-10 grid-rows-contact">
-			<div class="row-span-1 col-end-11 justify-self-end text-black text-[150px]">Contact</div>
+		<div class="w-full rounded-t-chungus bg-gray-200 py-28 px-48 grid gap-4 grid-cols-10 grid-rows-contact">
+			<div class="row-span-1 col-end-11 justify-self-end text-black font-['Poppins-SemiBold'] text-[100px]">Contact</div>
 			<p class="row-span-1 col-start-8 col-end-11 justify-self-end">
-				We can't wait to hear from you. Let us know what projects you'd like to get started.
+				Consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim.
 			</p>
-			<form  class="row-span-1 col-start-8" id="contact" name="contact" netlify>
+			<form class="row-span-1 col-start-8 col-end-11 flex flex-col gap-2" id="contact" name="contact" data-netlify="true">
 				<p>
-					<label>Name <input type="text" name="name" /></label>
+					<label class="flex">
+						<span class="w-24 flex justify-center py-2 bg-orange-400">Name</span>
+						<input class="flex-1" type="text" name="name" />
+					</label>
 				</p>
 				<p>
-					<label>Email <input type="email" name="email" /></label>
+					<label class="flex">
+						<span class="w-24 flex justify-center py-2 bg-orange-400">Email</span>
+						<input class="flex-1" type="email" name="email" />
+					</label>
 				</p>
-				<p>
-					<button type="submit">Send</button>
+				<p class="flex justify-end mt-2">
+					<button class="w-24 flex justify-center py-2 bg-orange-400" type="submit">Send</button>
 				</p>
 			</form>
 			<!-- <div class="row-span-4 col-start-6">btt</div> -->
