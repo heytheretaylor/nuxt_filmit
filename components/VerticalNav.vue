@@ -8,7 +8,7 @@ const links = [
 	]
 </script>
 <template>
-	<nav class="z-10 fixed left-4 top-8 h-min w-max mix-blend-difference">
+	<nav class="w-max m-">
 		<ul>
 			<li v-for="link in links" class="transition-transform hover:translate-x-6 mb-2">
 				<NuxtLink class="mix-blend-difference text-white" :to="link.to">{{ link.title }}</NuxtLink>

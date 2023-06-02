@@ -1,9 +1,9 @@
 <template>
-	<main class="flex flex-col items-center my-10 mx-24">
-		<SideNav></SideNav>
+	<div class="flex flex-col items-center my-10 mx-24">
+		<!-- <SideNav></SideNav> -->
 		<VideoEmbedSection v-for="video in videos" :title="video.title" :video-id="video.id">
 		</VideoEmbedSection>
-	</main>
+	</div>
 </template>
 <script setup>
 	const videos = [
