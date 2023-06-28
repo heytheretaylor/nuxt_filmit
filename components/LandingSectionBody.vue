@@ -1,5 +1,5 @@
 <template>
-	<div :class="['h-40 relative flex flex-col', position]">
+	<div :class="['relative flex flex-col', position]">
 		<div class="w-fit -translate-y-10">
 			<div :class="['text-5xl font-bold p-3', hColorClasses]">
 				<slot name="h"></slot>

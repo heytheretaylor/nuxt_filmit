@@ -10,20 +10,24 @@ const links = [
 <template>
 	<nav class="z-10 fixed left-4 top-8 h-min w-max mix-blend-difference">
 		<ul>
-			<li v-for="link in links" class="transition-transform hover:translate-x-6 mb-2">
+			<li v-for="link in links.slice(0,-1)" class="transition-transform hover:translate-x-6 mb-2">
 				<NuxtLink class="mix-blend-difference text-white" :to="link.to">{{ link.title }}</NuxtLink>
 			</li>
-			<li class="transition-transform hover:translate-x-6 mb-2">
-				<a @click="scrollTo">Conttact</a>
+			<li>
+				<a :href="links.at(-1).to">{{links.at(-1).title }} bob</a>
 			</li>
 		</ul>
 	</nav>
 </template>
-<style>
+<style scoped>
+	@import url('https://fonts.googleapis.com/css2?family=Inter&display=swap');
 	.diff{
 		mix-blend-mode: difference;
 		color: white;
 		/* z-index: 10; */
+	}
+	li a{
+		font-family: 'Inter', sans-serif;
 	}
 	li .router-link-active{
 		background: var(--rn-orange)

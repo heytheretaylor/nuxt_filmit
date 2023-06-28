@@ -9,10 +9,15 @@ module.exports = {
   ],
   theme: {
     borderRadius:{
-      'chungus': '10rem'
+      'chungus': '10rem',
+      '4xl': '2rem'
     },
     fontFamily:{
       'bold': ['Poppins-Bold']
+    },
+    fontSize:{
+      'step--1': 'var(--step--1)',
+      sm: 'var(--step--1)'
     },
     gridTemplateRows:{
       'contact': '1fr 1fr 1fr' 

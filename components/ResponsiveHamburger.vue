@@ -1,12 +1,20 @@
 <script setup>
 const checkbox = ref(null)
 const sidebarMenu = ref(null)
+function setOrToggleMenu(bool){
+  if(bool === true || bool === false) {
+    checkbox.value.checked = bool
+    return
+  }
+  checkbox.value.checked = !checkbox.value.checked
+
+}
 onMounted(()=> {
 	document.addEventListener('click', (e) => {
 		const isNotElementOrDecentant = (!sidebarMenu.value.contains(e.target) && sidebarMenu.value !== e.target && checkbox.value !== e.target)
 		console.log(e.target, isNotElementOrDecentant)
 		if(checkbox.value.checked && isNotElementOrDecentant) {
-			checkbox.value.checked = false
+			setOrToggleMenu(false)
 		} 
 	})
 })
@@ -27,7 +35,7 @@ onMounted(()=> {
 <input type="checkbox" ref="checkbox" id="hamburger-input" class="burger-shower" />
 <label id="hamburger-menu" ref="sidebarMenu" for="hamburger-input">
   <div class="relative pl-5">
-    <VerticalNav id="sidebar-menu"></VerticalNav>
+    <SideNav id="sidebar-menu"></SideNav>
   </div>
 </label>
 

@@ -1,16 +1,16 @@
 <template>
 	<main id="root" class="w-full">
-			<LandingHero is-black>
+			<PageHero is-black>
 				<!-- <SideNav/> -->
 				<ResponsiveHamburger></ResponsiveHamburger>
-				<div class="flex text-white flex-col my-auto justify-center items-center">
+				<div class="hero-wrapper flex text-white flex-col my-auto justify-center items-center">
 					<h1>{{ currentCopy.head }}</h1>
 					<h3 v-for="text in currentCopy.body">{{ text }}</h3>
 				</div>
 				<BoxNav></BoxNav>
-			</LandingHero>
+			</PageHero>
 		<slot></slot>
-		<LandingFooter></LandingFooter>
+		<PageFooter></PageFooter>
 
 	</main>
 </template>
@@ -19,7 +19,7 @@ const route = useRoute()
 const copy = {
 	index: {
 		head: "we're filmit.xyz",
-		body: ["we make videos, design stuff, and really enjoy it.", "most of the time we call ourselves an agency"]
+		body: ["We make videos, design stuff, and really enjoy it."," Most of the time we call ourselves an agency.","Scroll down to see more."]
 	},
 	about: {
 		head: "about Filmit.xyz",
@@ -37,7 +37,7 @@ const currentCopy = computed(()=> {
 // console.log(route)
 </script>
 <style>
-.page-enter-active,
+/* .page-enter-active,
 .page-leave-active {
   transition: all 0.4s;
 }
@@ -45,35 +45,15 @@ const currentCopy = computed(()=> {
 .page-leave-to {
   opacity: 0;
   filter: blur(1rem);	
-}
-body{
-		/* width: 100vw; */
-		scroll-behavior: smooth !important;
-		overflow-x: hidden;
-		margin: 0;
-		background-color: black;
-		color: white;
-		font-family: 'Poppins-Regular', 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
-	}
-	h1{
-		font-size: clamp(1.0rem, 4.5rem, 12rem);
-		display: inline;
-		color: white;
-		font-family: 'Poppins-Bold';
-	}
-	h2{
-		font-size: 3.75rem;
-		display: inline;
-		color: white;
-		font-family: 'Poppins-Bold';
-	}
-	h3{
-		font-weight: 300;
-	}
+} */
+
 	.ui-button{
 		z-index: 10;
     outline: 2px solid transparent;
     outline-offset: 2px;
 	}
-
+	.hero-wrapper{
+		width: min(100% - 3rem, 90ch);
+		
+	}
 </style>
